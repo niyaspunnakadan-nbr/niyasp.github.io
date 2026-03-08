@@ -6,29 +6,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Niyas P | Academic Website</title>
+<title>Niyas P | Embedded Software Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family:'Inter',sans-serif;
+font-family:'Poppins',sans-serif;
 margin:0;
 background:#f4f7fb;
 color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#1f3c5a,#2c6ea4);
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
-padding:60px 20px;
 text-align:center;
+padding:60px 20px;
 }
 
 .profile{
-width:170px;
-height:170px;
+width:180px;
+height:180px;
 border-radius:50%;
 border:5px solid white;
 object-fit:cover;
@@ -37,9 +37,9 @@ margin-bottom:15px;
 
 nav{
 background:white;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
 padding:15px;
 text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
 }
@@ -47,12 +47,12 @@ top:0;
 nav a{
 margin:0 15px;
 text-decoration:none;
-color:#2c6ea4;
 font-weight:600;
+color:#2c5364;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:30px;
 }
@@ -66,38 +66,39 @@ box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 h2{
-color:#1f3c5a;
+color:#2c5364;
 }
 
-.publication{
-margin-bottom:20px;
+ul{
+line-height:1.8;
 }
 
 .button{
 display:inline-block;
-padding:8px 16px;
-background:#2c6ea4;
+background:#2c5364;
 color:white;
-border-radius:5px;
+padding:10px 18px;
+border-radius:6px;
 text-decoration:none;
 margin-top:10px;
 }
 
-.links a{
+.social a{
 display:inline-block;
 margin:10px;
-padding:8px 14px;
+padding:8px 15px;
 background:#eef4fa;
 border-radius:5px;
 text-decoration:none;
-color:#2c6ea4;
+color:#2c5364;
 }
 
 footer{
-background:#1f3c5a;
+background:#2c5364;
 color:white;
 text-align:center;
 padding:25px;
+margin-top:40px;
 }
 
 </style>
@@ -112,16 +113,19 @@ padding:25px;
 
 <h1>Niyas P</h1>
 
-<p>Researcher | Environmental Science & Agroforestry</p>
+<p>Embedded Software Engineer | Automotive Systems | AI/ML Enthusiast</p>
+
+<a class="button" href="Resume.pdf">Download Resume</a>
 
 </header>
 
 <nav>
 
 <a href="#about">About</a>
-<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
 <a href="#publications">Publications</a>
-<a href="#profiles">Profiles</a>
+<a href="#awards">Awards</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -130,28 +134,60 @@ padding:25px;
 
 <div class="card" id="about">
 
-<h2>About</h2>
+<h2>About Me</h2>
 
 <p>
-Welcome to my academic webpage. My research focuses on biodiversity,
-agroforestry systems, and sustainable ecological management in urban
-and peri-urban landscapes.
+Embedded Software Engineer with 6+ years experience in automotive
+software development including Electronic Braking Systems, Thermal
+Management and Infotainment systems.
 </p>
 
-<a class="button" href="resume.pdf">Download CV</a>
+<p>
+Strong background in C, C++, Python, MATLAB and Model Based
+Development using Simulink with exposure to Machine Learning,
+Signal Processing and Embedded Systems.
+</p>
 
 </div>
 
-<div class="card" id="research">
+<div class="card" id="experience">
 
-<h2>Research Interests</h2>
+<h2>Professional Experience</h2>
+
+<h3>Continental Automotive Components India Pvt. Ltd.</h3>
+
+<p>Embedded Software Engineer (2023 – Present)</p>
+
+<ul>
+<li>Electronic Braking System software development</li>
+<li>Model Based Development using MATLAB & Simulink</li>
+<li>Failsafe system development</li>
+</ul>
+
+<h3>Bosch Global Software Technologies Pvt. Ltd.</h3>
+
+<p>Embedded Software Engineer (2020 – 2023)</p>
+
+<ul>
+<li>Thermal management software development</li>
+<li>Automotive infotainment middleware development</li>
+<li>Python based test automation tools</li>
+</ul>
+
+</div>
+
+<div class="card" id="skills">
+
+<h2>Technical Skills</h2>
 
 <ul>
 
-<li>Agroforestry Systems</li>
-<li>Functional Biodiversity</li>
-<li>Urban Ecology</li>
-<li>Sustainable Agriculture</li>
+<li>C, C++, Python, MATLAB</li>
+<li>Simulink Model Based Development</li>
+<li>Embedded Systems & Microcontrollers</li>
+<li>CAN, AUTOSAR basics</li>
+<li>Machine Learning & Signal Processing</li>
+<li>QNX, OSEK, Git, DOORS</li>
 
 </ul>
 
@@ -159,29 +195,48 @@ and peri-urban landscapes.
 
 <div class="card" id="publications">
 
-<h2>Selected Publications</h2>
+<h2>Publications</h2>
 
-<div class="publication">
+<ul>
 
-<b>Functional diversity in the selected urban and peri-urban homegardens of Kerala, India</b>
+<li>
+A deep learning framework for the detection of Plus disease in retinal
+fundus images of preterm infants
+</li>
 
-<p>Indian Journal of Agroforestry</p>
+<li>
+Deep Neural Network Based Multi-class Arrhythmia Classification
+</li>
 
-<a class="button" href="https://epubs.icar.org.in/index.php/IJA/article/view/103221">
-View Paper
-</a>
+</ul>
 
 </div>
 
-<p>More publications available on ResearchGate.</p>
+<div class="card" id="awards">
+
+<h2>Awards & Achievements</h2>
+
+<ul>
+
+<li>Winner – Camera Safety Monitor Hackathon (Continental 2024)</li>
+<li>Runner-up – Road Roughness Index Hackathon (Continental 2023)</li>
+<li>Star of the Month Nomination (Continental 2023)</li>
+<li>Silver Award for Performance (Bosch 2020)</li>
+<li>First Prize – National Level Tech Fest (GECW 2015)</li>
+
+</ul>
 
 </div>
 
-<div class="card" id="profiles">
+<div class="card" id="contact">
 
-<h2>Academic Profiles</h2>
+<h2>Contact</h2>
 
-<div class="links">
+<p>Email: niyasp.cet@gmail.com</p>
+
+<p>Phone: +91 9633430076</p>
+
+<div class="social">
 
 <a href="https://orcid.org/0000-0001-7493-8294">ORCID</a>
 
@@ -193,21 +248,11 @@ View Paper
 
 </div>
 
-<div class="card" id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: your-email@example.com</p>
-
-<p>Location: Kerala, India</p>
-
-</div>
-
 </div>
 
 <footer>
 
-© 2026 Niyas P — Academic Website
+© 2026 Niyas P | Embedded Software Engineer
 
 </footer>
 

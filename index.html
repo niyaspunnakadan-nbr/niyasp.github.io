@@ -3,48 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Niyas | Portfolio</title>
+<title>Niyas P | Embedded Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 
-body{background:#0f172a;color:#e2e8f0;line-height:1.6}
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+transition:0.3s;
+}
 
-header{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#1d4ed8,#7c3aed)}
+body.light{
+background:#f8fafc;
+color:#0f172a;
+}
 
-header h1{font-size:52px;margin-bottom:10px}
-header p{font-size:20px;opacity:.9}
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#1d4ed8,#7c3aed);
+padding:40px;
+}
 
-nav{position:sticky;top:0;background:#020617;padding:15px;display:flex;justify-content:center;gap:30px;z-index:10}
+header h1{font-size:64px;margin-bottom:10px}
+header p{font-size:22px;margin-bottom:25px}
 
-nav a{color:white;text-decoration:none;font-weight:bold}
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:14px 26px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.primary{
+background:white;
+color:#1d4ed8;
+}
+
+.secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn:hover{transform:translateY(-3px)}
+
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:28px;
+z-index:10;
+}
+
+nav a{color:white;text-decoration:none}
 nav a:hover{color:#60a5fa}
 
-section{max-width:1100px;margin:auto;padding:70px 20px}
+.toggle{
+position:fixed;
+right:20px;
+bottom:20px;
+padding:12px 16px;
+background:#2563eb;
+border-radius:50px;
+color:white;
+cursor:pointer;
+}
 
-h2{font-size:34px;margin-bottom:25px;color:#60a5fa;text-align:center}
+section{max-width:1100px;margin:auto;padding:80px 20px}
 
-.about{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center}
+h2{text-align:center;margin-bottom:40px;color:#60a5fa;font-size:36px}
 
-.avatar{width:180px;height:180px;border-radius:50%;background:#1e293b;display:flex;align-items:center;justify-content:center;font-size:60px}
+.about{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:50px;
+align-items:center;
+}
 
-.card{background:#1e293b;padding:25px;border-radius:12px}
+.avatar{
+width:220px;
+height:220px;
+border-radius:50%;
+background:#1e293b;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+}
 
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{
+background:#1e293b;
+padding:28px;
+border-radius:14px;
+transition:.3s;
+}
 
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+body.light .card{background:white}
 
-.skill{background:#1e293b;padding:20px;border-radius:10px;text-align:center}
+.card:hover{transform:translateY(-6px)}
 
-.btn{display:inline-block;margin-top:20px;padding:12px 22px;background:#2563eb;color:white;text-decoration:none;border-radius:8px}
-.btn:hover{background:#1d4ed8}
+.skills{max-width:700px;margin:auto}
+
+.skill{margin-bottom:18px}
+
+.skill-name{margin-bottom:5px}
+
+.bar{
+height:10px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+background:#60a5fa;
+}
+
+.timeline{border-left:3px solid #60a5fa;padding-left:30px}
+.timeline-item{margin-bottom:35px}
+.timeline-item h3{margin-bottom:6px}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px
+}
+
+.achievements{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:22px
+}
+
+.social{
+margin-top:15px;
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.social a{
+color:#60a5fa;
+text-decoration:none;
+font-weight:500;
+}
 
 .contact{text-align:center}
 
-footer{text-align:center;padding:30px;background:#020617;margin-top:40px}
+footer{text-align:center;padding:30px;background:#020617}
 
 @media(max-width:700px){
 .about{grid-template-columns:1fr;text-align:center}
+header h1{font-size:42px}
 }
 
 </style>
@@ -53,78 +183,171 @@ footer{text-align:center;padding:30px;background:#020617;margin-top:40px}
 <body>
 
 <header>
-<h1>Niyas</h1>
-<p>Electronics Student • Technology Enthusiast • Lifelong Learner</p>
-<a class="btn" href="#projects">View My Work</a>
+<h1>Niyas P</h1>
+<p>Embedded Software Engineer • Automotive Systems • AI & Embedded Enthusiast</p>
+
+<div class="hero-buttons">
+<a class="btn primary" href="#contact">Contact Me</a>
+<a class="btn secondary" href="resume.pdf">Download Resume</a>
+</div>
+
+<div class="social">
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="https://www.researchgate.net/profile/Niyas-Punnakadan">ResearchGate</a>
+</div>
+
 </header>
 
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Research</a>
+<a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
 <h2>About Me</h2>
 <div class="about">
+
 <div class="avatar">N</div>
+
 <div class="card">
-<p>Hello! I'm <b>Niyas</b>. I enjoy learning about electronics, technology and building practical projects. I like experimenting with circuits, computers and software.</p>
+<p><b>Niyas P</b> is an Embedded Software Engineer with 6+ years of experience in the automotive industry working on safety-critical systems.</p>
 
-<p>This website showcases my projects, skills and learning journey.</p>
+<p>His experience includes Electronic Braking Systems, Thermal Management systems, Automotive Infotainment software and Test Automation platforms.</p>
 
-<a class="btn" href="#contact">Get In Touch</a>
+<p>His research interests include Embedded Systems, Machine Learning, Signal Processing and Automotive Electronics.</p>
 </div>
 </div>
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
+<h2>Technical Skills</h2>
+
 <div class="skills">
 
-<div class="skill">Electronics Basics</div>
-<div class="skill">Computer Hardware</div>
-<div class="skill">HTML & Web Basics</div>
-<div class="skill">Problem Solving</div>
+<div class="skill">
+<div class="skill-name">C / C++</div>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">MATLAB / Simulink</div>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Embedded Systems</div>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Machine Learning</div>
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
 
 </div>
+
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Continental Automotive (2023 – Present)</h3>
+<p>Embedded software development for Electronic Braking Systems including model-based development and safety system implementation.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Bosch Global Software Technologies (2020 – 2023)</h3>
+<p>Developed automotive thermal management and infotainment control software using C++ on QNX.</p>
+</div>
+
+<div class="timeline-item">
+<h3>NTTF Training Officer</h3>
+<p>Provided training in Embedded C, microcontrollers and communication protocols.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
+<h2>Research & Publications</h2>
+
 <div class="projects">
 
 <div class="card">
-<h3>Electronics Project</h3>
-<p>Add details about your electronics circuit or experiment.</p>
+<h3>Retinal Disease Detection</h3>
+<p>Deep learning framework for detecting Plus disease in retinal images of preterm infants.</p>
 </div>
 
 <div class="card">
-<h3>Website Project</h3>
-<p>A simple website built using HTML and CSS.</p>
+<h3>Arrhythmia Classification</h3>
+<p>Deep neural network model for multi-class ECG arrhythmia classification.</p>
 </div>
 
 <div class="card">
-<h3>Learning Project</h3>
-<p>Document something new you learned.</p>
+<h3>Automotive Test Automation</h3>
+<p>Machine learning based automation algorithms for automotive test platforms.</p>
 </div>
 
 </div>
+
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+
+<div class="achievements">
+
+<div class="card">Winner – Camera Safety Monitor Hackathon (Continental 2024)</div>
+<div class="card">Runner-up – Road Roughness Index Hackathon (Continental 2023)</div>
+<div class="card">Silver Award – Performance Recognition (Bosch 2020)</div>
+<div class="card">First Prize – National Level Tech Fest</div>
+
+</div>
+
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
+
 <div class="card contact">
-<p>Email: your@email.com</p>
-<p>If you want to collaborate or discuss technology, feel free to contact me.</p>
-<a class="btn" href="mailto:your@email.com">Send Email</a>
+<p>Email: niyasp.cet@gmail.com</p>
+<p>Phone: +91 9633430076</p>
+<p>Location: India</p>
+
+<div class="social">
+<a href="mailto:niyasp.cet@gmail.com">Email</a>
+<a href="https://www.researchgate.net/profile/Niyas-Punnakadan">ResearchGate</a>
 </div>
+
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Niyas | Portfolio Website</p>
+<p>© 2026 Niyas P | Embedded Software Engineer</p>
 </footer>
+
+<div class="toggle" onclick="toggleMode()">☀️</div>
+
+<script>
+function toggleMode(){
+ document.body.classList.toggle('light');
+}
+</script>
 
 </body>
 </html>
